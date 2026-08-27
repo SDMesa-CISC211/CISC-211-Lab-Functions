@@ -249,6 +249,8 @@
       <itemPath>../src/testFuncs.c</itemPath>
       <itemPath>../src/testFuncs.h</itemPath>
       <itemPath>../src/asmExterns.h</itemPath>
+      <itemPath>../src/asmMult-func-bin-0310.s</itemPath>
+      <itemPath>../src/asmMult-func-yanez-0310.s</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
@@ -265,11 +267,11 @@
         <platformTool>nEdbgTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
         <languageToolchainVersion>5.00</languageToolchainVersion>
-        <platform>3</platform>
+        <platform>4</platform>
       </toolsSet>
       <packs>
-        <pack name="SAME51_DFP" vendor="Microchip" version="3.8.253"/>
         <pack name="CMSIS" vendor="ARM" version="6.2.0"/>
+        <pack name="SAME51_DFP" vendor="Microchip" version="3.8.253"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -298,7 +300,23 @@
         <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
         <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
       </makeCustomizationType>
-      <item path="../src/asmMult.s" ex="false" overriding="false">
+      <item path="../src/asmMult-func-bin-0310.s" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-CO>
+        </C32-CO>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../src/asmMult.s" ex="true" overriding="false">
         <C32>
         </C32>
         <C32-AR>
@@ -1542,6 +1560,8 @@
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-fffff"/>
         <property key="poweroptions.powerenable" value="false"/>
+        <property key="programmerToGoFilePath"
+                  value="D:/MBOs_work/reference_apps/apps/sam_e51_cnano/same51n_getting_started/firmware/sam_e51_cnano.X/debug/sam_e51_cnano/sam_e51_cnano_ptg"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.preservedataflash" value="false"/>
         <property key="programoptions.preservedataflash.ranges"
@@ -1561,6 +1581,7 @@
         <property key="toolpack.updateoptions.packversion"
                   value="Press to select which tool pack to use"/>
         <property key="voltagevalue" value=""/>
+        <property key="x.erase.clearprot" value="true"/>
       </nEdbgTool>
     </conf>
   </confs>
